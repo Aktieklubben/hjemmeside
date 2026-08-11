@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { albumTitle, tracks } from "@/data/album-tracks";
 
+// next/image med unoptimized:true sætter ikke selv basePath foran src (i
+// modsætning til almindelige <Link>/<a> i appen) — skal gøres manuelt.
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata = {
   title: "Album · Aktieklubben",
 };
@@ -10,7 +14,7 @@ export default function AlbumPage() {
     <div className="flex flex-col items-center gap-6 py-8 text-center">
       <div className="relative h-64 w-64 overflow-hidden rounded-lg shadow-lg sm:h-80 sm:w-80">
         <Image
-          src="/album-cover.png"
+          src={`${BASE_PATH}/album-cover.png`}
           alt={`${albumTitle} - albumcover`}
           fill
           className="object-cover"

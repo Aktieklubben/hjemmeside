@@ -1,0 +1,22 @@
+{
+  "id": "eksempel-christian",
+  "name": "Christian (eksempel)",
+  "holdings": [
+    {
+      "symbol": "AAPL",
+      "shares": 10,
+      "boughtDate": "2024-03-01",
+      "boughtPrice": 178.5,
+      "soldDate": null,
+      "soldPrice": null
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "shares": 25,
+      "boughtDate": "2023-11-15",
+      "boughtPrice": 650,
+      "soldDate": null,
+      "soldPrice": null
+    }
+  ]
+}

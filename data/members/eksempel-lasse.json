@@ -1,0 +1,22 @@
+{
+  "id": "eksempel-lasse",
+  "name": "Lasse (eksempel)",
+  "holdings": [
+    {
+      "symbol": "MSFT",
+      "shares": 8,
+      "boughtDate": "2024-01-10",
+      "boughtPrice": 380,
+      "soldDate": null,
+      "soldPrice": null
+    },
+    {
+      "symbol": "MAERSK-B.CO",
+      "shares": 5,
+      "boughtDate": "2023-06-01",
+      "boughtPrice": 14000,
+      "soldDate": "2026-04-01",
+      "soldPrice": 15500
+    }
+  ]
+}

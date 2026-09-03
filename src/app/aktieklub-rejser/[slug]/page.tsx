@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import { trips } from "@/data/trips";
+import { getTripSuggestions } from "@/lib/trip-suggestions.server";
+import TripSuggestionsBox from "@/components/TripSuggestions";
 
 export const dynamicParams = false;
 
@@ -40,6 +42,13 @@ export default async function TripPage({
         </code>
         .
       </p>
+
+      {trip.suggestions && (
+        <TripSuggestionsBox
+          slug={trip.slug}
+          initial={getTripSuggestions(trip.slug)}
+        />
+      )}
     </div>
   );
 }

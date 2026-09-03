@@ -16,4 +16,8 @@ export const tracks: Track[] = [
     title: "Mambo Baddie",
     url: "https://suno.com/song/512e03b9-3520-4058-b7f7-ade502b0aaf7",
   },
+  {
+    title: "Ingen tunge fugle",
+    url: "https://suno.com/song/6d681dbc-b1ab-43b1-9d73-60eb23096b72",
+  },
 ];
